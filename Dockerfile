@@ -1,0 +1,1 @@
+FROM ottowinter/esphomeyaml
