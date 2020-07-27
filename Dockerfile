@@ -4,4 +4,4 @@ ENV ESPHOME_DASHBOARD_USE_PING="true"
 RUN apt-get -y install iputils-ping
 RUN pip install esphome
 RUN pip install -U platformio
-CMD esphome /config dashboard --password $password
+CMD pip install -U platformio | : && esphome /config dashboard --password $password
